@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 		<title> 
+		Eyal Kaplan
+		</title>
+  <style>
+    :root {
+      --primary:#27408B; /* blue */ 
+      --secondary: #40E0D0; /* turquoise */
+      --dark: #004d4d;
+      --light: #f9f9f9;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: var(--light);
+      color: var(--dark);
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 65%;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    section {
+      padding: 2rem 0;
+      border-bottom: 1px solid #001F3F;;
+    }
+
+    section h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    /* About section layout */
+    #about {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    #about .text {
+      flex: 1 1 60%;
+    }
+
+    #about img {
+      flex: 1 1 30%;
+      max-width: 220px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid var(--secondary);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #001F3F;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      		<a href="#about">About Me</a>
+      		<a href="#publications">Publications</a>
+      		<a href="#slides">Slides</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <div class="text">
+							<!-- You can replace the text here: this is the about me text -->
+        <h2>About Me</h2>
+        					<p> I am a postdoctoral researcher in Set Theory at UC Berkeley, under Prof. Gabe Goldberg. <br>
+							<!--My research focuses on non stationary support :P-->
+							I received my PHD and MSc. from TAU under the supervision of Prof. Moti Gitik. <br>
+							You can reach me at: eyalkaplan 'at' berkeley.edu</p>
+      </div>
+
+							<!-- You can replace the photo here: this is Eyal.jpj at the moment -->
+      <img src="Eyal.jpg" alt="Your Photo">
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul>
+        		<li><strong>On Easton support iteration of Prikry type forcing notions</strong> with Moti Gitik, JSL, 2023. <a href="papers/EastonSupport.pdf" target="_blank">[pdf]</a></li>
+        		<li><strong>Paper_name</strong> with ?, Jornal, Year. <a href="papers/EastonSupport.pdf" target="_blank">[pdf]</a></li>
+        		<!-- You can add more publications on top, remember to save the pdf in the papers folder and upload the folder to your host site -->
+
+      </ul>
+    </section>
+
+<section id="slides">
+  <h2>Slides</h2>
+  <ul>
+    			<li><strong>Applications of the fusion technique</strong>, Berkeley Inner model theory conference, 2025. 
+      				<a href="slides/PresentationEyalBerkeleyInnerModelConference.pdf" target="_blank">[slides]</a></li>
+
+    			<li><strong>Failure of GCH on a measurable with the Ultrapower Axiom</strong>, European set theory conference, 2024. 
+			<a href="slides/PresentationEyalKaplan_ESTC2024.pdf" target="_blank">[slides]</a></li>
+  </ul>
+</section>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Eyal Kaplan</p>
+  </footer>
+</body>
+</html>
